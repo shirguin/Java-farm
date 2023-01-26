@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 
-public class Dog extends Pet{
+public class Donkey extends PackAnimal {
     private String type_animal;
     private ArrayList list_commands;
 
-    public Dog(int id, String name, String birthdate){
+    public Donkey(int id, String name, String birthdate){
         super(id, name, birthdate);
-        this.type_animal = "Собака";
+        this.type_animal = "Осел";
         this.list_commands = new ArrayList();
     }
 

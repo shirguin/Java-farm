@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 
-public class Dog extends Pet{
+public class Hamster extends Pet {
     private String type_animal;
     private ArrayList list_commands;
 
-    public Dog(int id, String name, String birthdate){
+    public Hamster(int id, String name, String birthdate){
         super(id, name, birthdate);
-        this.type_animal = "Собака";
+        this.type_animal = "Хомяк";
         this.list_commands = new ArrayList();
     }
 
@@ -30,3 +30,4 @@ public class Dog extends Pet{
         return String.format("id: %d | Вид: %s | Кличка: %s | Рожден: %s | Категория: %s", getId(), getType_animal(), getName(), getBirthdate(), getCategory_animals());
     }
 }
+
