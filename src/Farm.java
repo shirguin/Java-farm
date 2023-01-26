@@ -49,6 +49,39 @@ public class Farm {
         return null;
     }
 
+    public ArrayList getListPetAnimals(){
+        ArrayList animals = getList_animals();
+        ArrayList pet_animals = new ArrayList<>();
+
+        for (int i = 0; i < animals.size(); i++){
+            Animal el = (Animal) animals.get(i);
+            if (el instanceof Pet){
+                pet_animals.add(el);
+            }
+        }
+        return pet_animals;
+    }
+
+    public ArrayList getListPackAnimals(){
+        ArrayList animals = getList_animals();
+        ArrayList pack_animals = new ArrayList<>();
+
+        for (int i = 0; i < animals.size(); i++){
+            Animal el = (Animal) animals.get(i);
+            if (el instanceof PackAnimal){
+                pack_animals.add(el);
+            }
+        }
+        return pack_animals;
+    }
+
+    public void printList(ArrayList list){
+        for (int i = 0; i < list.size(); i++) {
+            Animal el = (Animal) list.get(i);
+            System.out.println(el);
+        }
+    }
+
     public void removeAnimal(int id){
         Animal animal = getAnimalById(id);
         this.list_animals.remove(animal);
