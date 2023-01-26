@@ -7,7 +7,7 @@ public class PackAnimal extends Animal{
     }
 
     public String getCategory_animals(){
-        return category_animals;
+        return this.category_animals;
     }
 
     public void setCategory_animals(String category_animals){

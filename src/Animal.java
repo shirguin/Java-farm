@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Animal {
     private int id;
     private String name;
@@ -11,7 +13,7 @@ public class Animal {
     }
 
     public int getId(){
-        return id;
+        return this.id;
     }
 
     public void setId(int id){
@@ -19,7 +21,7 @@ public class Animal {
     }
 
     public String getName(){
-        return name;
+        return this.name;
     }
 
     public void setName(String name){
@@ -27,7 +29,7 @@ public class Animal {
     }
 
     public String getBirthdate(){
-        return birthdate;
+        return this.birthdate;
     }
 
     public void setBirthdate(String birthdate){
